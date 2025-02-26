@@ -12,8 +12,11 @@
       wget
       curl
       auto-cpufreq
+      zapret
       unrar
       unzip
       ntfs3g
+      ipset
+      iptables
   ];
 }
