@@ -26,5 +26,6 @@
     pywal16
     imagemagick
     nerdfonts
+    swaynotificationcenter
   ];
 }
