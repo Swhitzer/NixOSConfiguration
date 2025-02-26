@@ -26,7 +26,6 @@
     telegram-desktop
     vlc
     qbittorrent
-    nerdfonts
     telegram-desktop
     libreoffice-qt
     hunspell
@@ -35,6 +34,7 @@
     zapret
     pywal16
     imagemagick
+    nerdfonts
   ];
 
 
