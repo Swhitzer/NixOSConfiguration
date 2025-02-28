@@ -1,8 +1,7 @@
-{ nixvim, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
-    nixvim.homeManagerModules.nixvim
     ./packages.nix
     ./hyprland.nix
     ./waybar.nix
@@ -14,7 +13,7 @@
   home.username = "swhit";
   home.homeDirectory = "/home/swhit";
   home.stateVersion = "24.11";
-
+  
 # Home Manager is pretty good at managing dotfiles. The primary way to manage
 # plain files is through 'home.file'.
   home.file = {

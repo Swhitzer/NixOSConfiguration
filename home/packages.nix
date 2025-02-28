@@ -27,5 +27,7 @@
     imagemagick
     nerdfonts
     swaynotificationcenter
+    localsend
+    mpv
   ];
 }

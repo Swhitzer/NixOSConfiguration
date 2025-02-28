@@ -7,6 +7,10 @@
       enable = true;
     };
     settings = {
+    monitor = [
+      "eDP-1, highres, 0x0, 2"
+      ", preferred, auto, 1"
+    ];
       "$mod" = "SUPER";
       "$terminal" = "ghostty";
       "$menu" = "wofi --show drun";
