@@ -19,28 +19,5 @@
     enable = true;
     enableZshIntegration = true;
     settings = builtins.fromTOML (builtins.unsafeDiscardStringContext (builtins.readFile ./myTheme.toml));
-    #settings = {
-    #  "$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json";
-    #  final_space = true;
-    #  version = 3;
-
-    #  blocks = {
-    #    type = "prompt";
-    #    alignment = "left";
-    #    
-    #    segments = [
-    #      {
-    #        type = "path";
-    #        style = "powerline";
-    #        powerline_symbol = "\uE0B0";
-    #        foreground = "#ffffff";
-    #        background = "#61AFEF";
-    #        propertires = {
-    #          style = "folder";
-    #        };
-    #      }
-    #    ];
-    #  };
-    #};
   };
 }

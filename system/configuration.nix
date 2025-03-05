@@ -11,6 +11,7 @@
     ./packages.nix
     ./graphics.nix
     ./bluetooth.nix
+    ./virtualisation.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
