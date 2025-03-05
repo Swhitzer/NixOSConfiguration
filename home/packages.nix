@@ -29,5 +29,7 @@
     swaynotificationcenter
     localsend
     mpv
+    python3
+    bison
   ];
 }
