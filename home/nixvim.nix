@@ -17,6 +17,7 @@
 	  ts_ls.enable = true;
 	  lua_ls.enable = true;
 	  nil_ls.enable = true;
+	  gopls.enable = true;
 	};
       };
 
@@ -59,6 +60,11 @@
     {
       plugin = pywal-nvim;
       config = ''lua require('pywal').setup()'';
+    }
+
+    {
+      plugin = go-nvim;
+      config = ''lua require('go').setup()'';
     }
     ];
   };

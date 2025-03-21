@@ -12,6 +12,10 @@
     nixvim.url = "github:nix-community/nixvim/nixos-24.11";
 
     stylix.url = "github:danth/stylix/release-24.11";
+
+    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
+
+    firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
   };
 
   outputs = { nixpkgs, ...}@inputs:

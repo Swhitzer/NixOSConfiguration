@@ -6,6 +6,7 @@
     wineWowPackages.stable
     winetricks
     steam
+    steam-run
     yabridge
     yabridgectl
     brightnessctl
@@ -26,10 +27,22 @@
     pywal16
     pywalfox-native
     imagemagick
-    nerdfonts
     swaynotificationcenter
     localsend
     mpv
     python3
+    quickemu
+    prismlauncher
+    hyprshot
+    tor-browser
+    cider
+    ollama
+    heimdall
+
+    nerdfonts
+    ipafont
   ];
+
+  fonts.fontconfig.enable = true;
+
 }

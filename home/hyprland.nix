@@ -17,7 +17,8 @@
       bind = [
 	"$mod, Q, exec, $terminal"
 	  "$mod, C, killactive,"
-	  "$mod, M, exit,"
+	  "$mod, M, fullscreen, 1"
+	  "$mod, L, exit,"
 	  "$mod, R, exec, $menu"
 
 	  "$mod, 1, workspace, 1"
@@ -47,6 +48,8 @@
       ];
 
       exec-once = [
+	"firefox"
+	"ghostty"
       ];
 
       general = {
@@ -62,7 +65,16 @@
 
       decoration = {
 	rounding = 0;
+	blur = {
+	  size = 16;
+	  passes = 2;
+	  new_optimizations = "on";
+	  ignore_opacity = true;
+	  xray = true;
+	};
       };
+
+      blurls = "waybar";
 
       input = {
 	kb_layout = "us, ru";
@@ -77,11 +89,15 @@
     };
   };
 
-  services.hyprpaper = {
-    enable = true;
-    settings = {
-      preload = "~/.cache/current-wallpaper.jpg";
-      wallpaper = ", ~/.cache/current-wallpaper.jpg";
-    };
-  };
+  #services.hyprpaper = {
+  #  enable = true;
+  #  settings = {
+  #    #preload = "~/.cache/current-wallpaper.jpg";
+  #    #wallpaper = ", ~/.cache/current-wallpaper.jpg";
+  #  };
+  #};
+
+
+  stylix.targets.hyprpaper.enable = true;
+
 }

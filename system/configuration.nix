@@ -17,6 +17,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 1;
   boot.loader.efi.canTouchEfiVariables = true; 
 
   time.timeZone = "Europe/Astrakhan";
@@ -35,6 +36,9 @@
 
   programs.zsh.enable = true;
   programs.hyprland.enable = true;
+
+  programs.adb.enable = true;
+  users.users.swhit.extraGroups = ["adbuser"];
 
   system.stateVersion = "24.11"; # Change me! Please!
 }

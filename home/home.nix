@@ -9,6 +9,9 @@
     ./ghostty.nix
     ./nixvim.nix
     ./git.nix
+    ./obs.nix
+    ./stylix.nix
+    ./firefox.nix
   ];
   home.username = "swhit";
   home.homeDirectory = "/home/swhit";
@@ -47,9 +50,6 @@
   home.sessionVariables = {
 
   };
-
-  programs.firefox.enable = true;
-
 
   programs.home-manager.enable = true;
 }
