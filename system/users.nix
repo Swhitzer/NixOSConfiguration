@@ -8,7 +8,7 @@
 
   users.users.swhit = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "video" "input"];
+    extraGroups = [ "wheel" "video" "input" "audio" "realtime"];
       shell = pkgs.zsh;
   };
 

@@ -38,6 +38,8 @@
     cider
     ollama
     heimdall
+    baobab
+
 
     nerdfonts
     ipafont
