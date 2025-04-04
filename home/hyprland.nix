@@ -8,8 +8,8 @@
     };
     settings = {
     monitor = [
-      "eDP-1, highres, 0x0, 2"
-      ", preferred, auto, 1"
+      "eDP-1, 2880x1800@90.01Hz, 0x0, 2"
+      ", highres, auto, 1"
     ];
       "$mod" = "SUPER";
       "$terminal" = "ghostty";
@@ -20,6 +20,7 @@
 	  "$mod, M, fullscreen, 1"
 	  "$mod, L, exit,"
 	  "$mod, R, exec, $menu"
+	  "$mod, S, exec, hyprshot -m output --clipboard-only"
 
 	  "$mod, 1, workspace, 1"
 	  "$mod, 2, workspace, 2"
@@ -53,6 +54,7 @@
       ];
 
       general = {
+	allow_tearing = true;
 	gaps_in = 0;
 	gaps_out = 0;
 	border_size = 0;
@@ -77,7 +79,7 @@
       blurls = "waybar";
 
       input = {
-	kb_layout = "us, ru";
+	kb_layout = "us, ru, jp";
 	kb_options = "grp:alt_shift_toggle,caps:swapescape";
       };
 

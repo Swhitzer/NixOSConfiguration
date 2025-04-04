@@ -40,6 +40,8 @@
   programs.adb.enable = true;
   users.users.swhit.extraGroups = ["adbuser"];
 
+  hardware.opentabletdriver.enable = true;
+
   services = {
       # Network shares
       samba = {

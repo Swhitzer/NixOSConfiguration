@@ -5,6 +5,7 @@
     neofetch
     wineWowPackages.stable
     winetricks
+    lutris
     steam
     steam-run
     yabridge
@@ -36,9 +37,15 @@
     hyprshot
     tor-browser
     cider
+    rhythmbox
+    libgpod
     ollama
     heimdall
     baobab
+    taisei
+    appimage-run
+    krita
+    v2raya
 
 
     nerdfonts
